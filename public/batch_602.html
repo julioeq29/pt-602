@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Classmates · Kitt</title>
+    <link rel="stylesheet" media="all" href="https://d26jy9fbi4q9wx.cloudfront.net/assets/application-faa7db77dd29e35f8b42c1cbb0aef5d40cf03c8befb2b08497b765319d72e503.css" id="stylesheet" />
+    <link rel="stylesheet" media="screen" href="https://d26jy9fbi4q9wx.cloudfront.net/packs/application-a7e5bcccfae45dac5eb61916ade53038.css" />
+    
+    <link rel="icon" type="image/png" href="https://d26jy9fbi4q9wx.cloudfront.net/assets/favicon-78bfa184892a74357d550c1a209f52e7072af7e9e84ad1b000785f19bc1f8f22.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="q+k74q7eh45oaCznbM5rFDEoCXCvFR/FGcrxVyI+94FcloBWglm1eeXSNuyKKaBj/8+k0kDwZeIYm+Iiir7I1w==" />
+  </head>
+
+  <body class='bg-grey' data-controller="navbar-menu" data-action="keyup->navbar-menu#closeMenuOnEscape">
+    <div data-controller="utilities--toggle-full-screen">
+      <nav class="container-fluid navbar" data-target="utilities--toggle-full-screen.navbar">
+    <div class="navbar-collection d-flex">
+      <a class="logo d-none d-sm-block" href="/">
+        <img alt="Le Wagon logo" class="navbar-logo" src="//d26jy9fbi4q9wx.cloudfront.net/assets/logo_square-2a2b37a2be341690cc27951815247ac550d17e57b97542a61b92848057aab506.svg" />
+</a>      <img alt="Le Wagon logo" class="navbar-logo d-sm-none" data-action="click-&gt;navbar-menu#toggleMenu" data-target="navbar-trigger.btn" src="//d26jy9fbi4q9wx.cloudfront.net/assets/logo_square-2a2b37a2be341690cc27951815247ac550d17e57b97542a61b92848057aab506.svg" />
+
+      <button class="menu-trigger "
+  data-action="navbar-menu#toggleMenu"
+  data-target="navbar-trigger.btn">
+  <div class="menu-trigger-content">
+    <span class="menu-trigger-content-label d-none d-sm-block">#602 Data PT</span>
+    <span class="menu-trigger-content-label d-sm-none">#602 Data PT</span>
+        <span class="menu-trigger-content-city">London</span>
+  </div>
+  <i class="mdi mdi-menu menu-trigger-icon " data-target="navbar-menu.menuIcon"></i>
+</button>
+
+<!-- Main Menu -->
+<div class="menu menu-main d-none" data-controller="navbar-side-panel-menu" data-target="navbar-menu.mainMenu">
+  <div class="overflow-scroll h-100">
+    <!-- Menu only for mobile -->
+      <div class="nav-mobile-links">
+  <!-- Menu section -->
+<div class="menu-panel visible d-xl-none" data-target="navbar-menu.menuPanel">
+  <span class="menu-panel-name"></span>
+  <ul class="menu-panel-items">
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602">
+      <i class="menu-panel-item-icon "></i>
+      Dashboard
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/challenges">
+      <i class="menu-panel-item-icon "></i>
+      Challenges
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/lectures">
+      <i class="menu-panel-item-icon "></i>
+      Lectures
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/flashcards">
+      <i class="menu-panel-item-icon "></i>
+      Flashcards
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/data_projects">
+      <i class="menu-panel-item-icon "></i>
+      Projects
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link active" href="/camps/602/classmates">
+      <i class="menu-panel-item-icon "></i>
+      Students
+</a>  </li>
+
+  </ul>
+</div>
+
+  </div>
+
+
+    <!-- Batch links -->
+    <!-- Menu section -->
+<div class="menu-panel visible" data-target="navbar-menu.menuPanel">
+  <span class="menu-panel-name">#602 Data PT</span>
+  <ul class="menu-panel-items">
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/calendar">
+      <i class="menu-panel-item-icon mdi mdi-calendar-month"></i>
+      Teaching calendar
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/dashboard">
+      <i class="menu-panel-item-icon mdi mdi-chart-bar"></i>
+      Overall performance
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/quiz_sessions">
+      <i class="menu-panel-item-icon mdi mdi-format-list-checks"></i>
+      Quizzes
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602/feedbacks">
+      <i class="menu-panel-item-icon mdi mdi-message-text"></i>
+      Feedbacks
+</a>  </li>
+
+  </ul>
+</div>
+
+
+    <!-- City links -->
+    <!-- Menu section -->
+<div class="menu-panel visible" data-target="navbar-menu.menuPanel">
+  <span class="menu-panel-name">London</span>
+  <ul class="menu-panel-items">
+      
+      
+      
+      
+        <li class="menu-panel-item">
+    <a href="#" class="menu-link" data-action="navbar-side-panel-menu#toggleSideMenu" data-btn-title="submenu-70269719008960" data-target="navbar-side-panel-menu.menuBtn navbar-menu.sideBtn">
+      <i class="menu-panel-item-icon mdi mdi-account-multiple-outline"></i>
+      Human resources
+      <i class="mdi mdi-chevron-right nav-expand-arrow"></i>
+    </a>
+    <!-- sidemenu -->
+    <div class="menu menu-side menu-side-invisible" data-target="navbar-side-panel-menu.menuSidePanel navbar-menu.sideMenu" id="submenu-70269719008960">
+      <div class="menu-panel visible">
+        <div class="menu-side-back-link d-flex d-sm-none" data-action="click->navbar-side-panel-menu#closeSideMenu" data-btn-title-mobile="submenu-70269719008960">
+          <i class="mdi mdi-chevron-left"></i>
+          <p>Back to main menu</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="menu-panel-name">Human resources</span>
+          <div data-action="click->navbar-side-panel-menu#closeSideMenu" data-btn-title-mobile="submenu-70269719008960" class="menu-panel-close d-none d-sm-block">
+            <i class="mdi mdi-close"></i>
+          </div>
+        </div>
+          <ul>
+              <li>
+                <a class="menu-link menu-link-white " href="/cities/london/recruitment">
+                  Find a teacher
+</a>              </li>
+          </ul>
+      </div>
+    </div>
+  </li>
+
+      
+      
+  </ul>
+</div>
+
+
+    <!-- Jump to links -->
+    <!-- Menu section -->
+<div class="menu-panel visible" data-target="navbar-menu.menuPanel">
+  <span class="menu-panel-name">Jump to</span>
+  <ul class="menu-panel-items">
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/camps/602?path=08-Projects%2F10-Demo-Day">
+      <i class="menu-panel-item-icon mdi mdi-code-tags"></i>
+      Batch #602 Data PT
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/alumni">
+      <i class="menu-panel-item-icon mdi mdi-school-outline"></i>
+      Alumni
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a class="menu-link " href="/knowledge/tutorials">
+      <i class="menu-panel-item-icon mdi mdi-book-open-outline"></i>
+      Library
+</a>  </li>
+
+        <li class="menu-panel-item">
+    <a href="#" class="menu-link" data-action="navbar-side-panel-menu#toggleSideMenu" data-btn-title="submenu-70269428157700" data-target="navbar-side-panel-menu.menuBtn navbar-menu.sideBtn">
+      <i class="menu-panel-item-icon mdi mdi-application-import"></i>
+      Batch
+      <i class="mdi mdi-chevron-right nav-expand-arrow"></i>
+    </a>
+    <!-- sidemenu -->
+    <div class="menu menu-side menu-side-invisible" data-target="navbar-side-panel-menu.menuSidePanel navbar-menu.sideMenu" id="submenu-70269428157700">
+      <div class="menu-panel visible">
+        <div class="menu-side-back-link d-flex d-sm-none" data-action="click->navbar-side-panel-menu#closeSideMenu" data-btn-title-mobile="submenu-70269428157700">
+          <i class="mdi mdi-chevron-left"></i>
+          <p>Back to main menu</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="menu-panel-name">Julio&#39;s batches</span>
+          <div data-action="click->navbar-side-panel-menu#closeSideMenu" data-btn-title-mobile="submenu-70269428157700" class="menu-panel-close d-none d-sm-block">
+            <i class="mdi mdi-close"></i>
+          </div>
+        </div>
+          <div class="mt-2">
+              <span class="menu-panel-name">London</span>
+              <ul class="mb-4">
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/753/classmates">
+                      #753 Data PT
+                        <span class="badge badge-primary">upcoming</span>
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/750/classmates">
+                      #750 Data FT
+                        <span class="badge badge-primary">upcoming</span>
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/699/classmates">
+                      #699 Data FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white active" href="/camps/602/classmates">
+                      #602 Data PT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/600/classmates">
+                      #600 Data_imperial FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/597/classmates">
+                      #597 Data FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/524/classmates">
+                      #524 Data FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/476/classmates">
+                      #476 Web PT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/475/classmates">
+                      #475 Data FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/474/classmates">
+                      #474 Web FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/473/classmates">
+                      #473 Web FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/424/classmates">
+                      #424 Data FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/423/classmates">
+                      #423 Web FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/390/classmates">
+                      #390 Web PT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/388/classmates">
+                      #388 Web FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/361/classmates">
+                      #361 Web FT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/317/classmates">
+                      #317 Web PT
+</a>                  </li>
+                  <li>
+                    <a class="menu-link menu-link-white " href="/camps/222/classmates">
+                      #222 Web FT
+                        <span  data-toggle="tooltip" data-placement="top" title="You were a student in this batch!" class="mdi mdi-school ml-2"></span>
+</a>                  </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </li>
+
+  </ul>
+</div>
+
+
+    <!-- Admin links -->
+    
+  </div>
+</div>
+
+        <ul class="navbar-links d-none d-xl-flex align-items-center">
+      <li class="navbar-item">
+        <a class="navbar-link" href="/camps/602">
+          Dashboard
+</a>      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="/camps/602/challenges">
+          Challenges
+</a>      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="/camps/602/lectures">
+          Lectures
+</a>      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="/camps/602/flashcards">
+          Flashcards
+</a>      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="/camps/602/data_projects">
+          Projects
+            <span class="counter color-grey">5</span>
+</a>      </li>
+      <li class="navbar-item">
+        <a class="navbar-link active" href="/camps/602/classmates">
+          Students
+            <span class="counter color-grey">17</span>
+</a>      </li>
+  </ul>
+
+    </div>
+    <div class="navbar-collection d-flex flex-row-reverse align-items-center">
+      <button class="navbar-user-trigger" data-action="navbar-menu#toggleUserMenu navbar-trigger#closeMenuTrigger">
+  <img alt="Julio Quintana" class="navbar-avatar" src="https://avatars.githubusercontent.com/u/44930318?v=4" />
+</button>
+
+<!-- Menu - User menu -->
+<div class="menu menu-user d-none" data-target="navbar-menu.userMenu">
+  <div class="menu-panel visible">
+    <div class="d-flex justify-content-between">
+      <span class="menu-panel-name">Julio Quintana</span>
+      <div data-action="click->navbar-menu#toggleUserMenu" class="menu-panel-close d-none d-sm-block">
+        <i class="mdi mdi-close"></i>
+      </div>
+    </div>
+    <ul class="menu-panel-items menu-panel-item-user">
+      <li class="menu-panel-item">
+        <a class="menu-link" href="/alumni/julioeq29">
+          <i class="mdi mdi-account-outline"></i> Profile
+</a>      </li>
+        <li class="menu-panel-item">
+          <a class="menu-link" href="/alumni/julioeq29/calendar">
+            <i class="mdi mdi-calendar-month"></i> Calendar
+</a>        </li>
+          <li class="menu-panel-item">
+            <a class="menu-link" href="/alumni/julioeq29/feedback">
+              <i class="mdi mdi-comment-text-multiple-outline"></i> Feedbacks
+</a>          </li>
+            <li class="menu-panel-item">
+              <a class="menu-link" href="/alumni/julioeq29/invoices">
+                <i class="mdi mdi-cash"></i> Invoices
+</a>            </li>
+        <li class="menu-panel-item">
+          <a class="menu-link" href="/camps/602/student_demo">
+            <i class="mdi mdi-account-convert-outline"></i> Student demo
+</a>        </li>
+    </ul>
+  </div>
+  <div class="menu-panel visible">
+    <span class="menu-panel-name">Tools</span>
+    <ul class="menu-panel-items menu-panel-item-user">
+      <li class="menu-panel-item">
+        <a target="_blank" class="menu-link" href="https://uikit.lewagon.com/">
+          <i class="mdi mdi-palette-outline"></i> UI kit
+</a>      </li>
+       <li class="menu-panel-item">
+        <a class="menu-link" href="/db">
+          <i class="mdi mdi-database"></i> Schema editor
+</a>      </li>
+
+        <li class="menu-panel-item">
+          <a class="menu-link" target="_blank" href="/redeem_github_student_developer_pack">
+            <i class="mdi mdi-github"></i> Student Developer Pack
+</a>        </li>
+
+        <li class="menu-panel-item">
+          <a class="menu-link" href="/zoom_meetings">
+            <i class="mdi mdi-laptop"></i> Zoom meetings
+</a>        </li>
+    </ul>
+  </div>
+  <div class="menu-panel visible">
+    <ul class="menu-panel-items menu-panel-item-user">
+        <li class="menu-panel-item">
+          <a target="_blank" class="menu-link" href="https://learn.lewagon.com/users/auth/kitt">
+            <i class="mdi mdi-open-in-new"></i> Sign in on Learn
+</a>        </li>
+      <li class="menu-panel-item">
+        <a class="menu-link" rel="nofollow" data-method="delete" href="/users/sign_out">
+          <i class="mdi mdi-logout-variant"></i> Sign out
+</a>      </li>
+    </ul>
+  </div>
+</div>
+
+      
+
+
+    </div>
+</nav>
+
+      <div class="flashes-container">
+</div>
+
+      <div data-navbar-menu-target="content" data-action="click->navbar-menu#closeMenu">
+        
+
+<div class="container" id="classmates-container">
+  <div class="row">
+    <div class="col-12">
+  <ul class="list-inline nav-underline nav-underline-left nav-underline-spaced">
+    <li>
+      <a class="tab-underline active-blue" href="/camps/602/classmates">
+        <i class="mdi mdi-account-multiple"></i> <span class="d-none d-md-inline">Classmates</span>
+</a>    </li>
+
+      <li>
+        <a class="tab-underline " href="/camps/602/classmates_game">
+          <i class="mdi mdi-gamepad-variant"></i> <span class="d-none d-md-inline">Guess who?</span>
+</a>      </li>
+  </ul>
+
+  <div class="d-none d-md-flex btn-position-right">
+    <a class="btn btn-default ml-2" href="/camps/602/classmates.pdf">
+      <i class="mdi mdi-printer"></i> Mug shots
+</a>  </div>
+</div>
+
+  </div>
+  <div class="row">
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/J-Cancelliere">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618001064/eelexnzbvzu8j8ewlb6p.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Joseph Cancelliere</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/J-Cancelliere/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I currently work as a project manager in the translation and localisation industry. I'm hoping to expand my skill set and eventually shift from project management to working work closely with technology, specifically CAT (computer assisted translation) tools, translation memories, and machine translation. I'm a runner, so in my free time, I like exploring the trails and parks in and around London.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/Al-Catto">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/79478006?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Alistair Catto</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/Al-Catto/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I'm a management consultant and founder of Beyond, We focus on delivering projects and programmes in Financial Crime, Compliance and Client Onboarding operations within Investment Banks. </p>
+
+<p class="student-bio-wrapper d-none d-md-block">I'm learning to code to enhance my skills, help build better client solutions and ultimately to support my passion for driving insight from data. </p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/fcostaduarte">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/80459657?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Francisco Costa Duarte</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/fcostaduarte/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I am a proactive, hardworking and motivated person, who understands the importance of being challenged and learning new things for my overall happiness. Since I graduated in 2016, I have been working in the Insurance Industry, currently I am Assistant Vice President at Lockton Companies. My interest in Data,Maths and Statistics led me to coding and Le Wagon is the next step of my journey where I intend to change my current role through optimizing the use of data in my company.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/indiarosefriswell">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/34651357?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>India Friswell</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/indiarosefriswell/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">Hello! I currently work in FinTech for a Trading platform. Hoping to be able to gain a good understanding of machine learning so I can apply the skills in my current job and possibly one day move into an industry which I am more passionate about such as sustainability in the field of data science.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/janagarina">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1617900938/meambfgxubeysdbgzkfw.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Jana Garina</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/janagarina/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I am international merchandiser for a clothing company with 7 years of experience.  I plan product ranges for several EU markets, track their performance vs budget and manage end of life of product. Learning data science and looking to maybe change my field or improve current ways of working.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/cholmess">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618047709/v6t3yfd7cprgue2wuncf.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Christopher Holmes</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/cholmess/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I had a career on real estate and finance, moved to Germany and decided here to change carreer and get into data science. After Le Wagon I would like to start getting experience and hopefully get into a startup or have my own consultancy company in the future.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/Jack-Hooper">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/80110446?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Jack Hooper</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/Jack-Hooper/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">Rocket science graduate from Australia, intrepid traveller thru European vistas, keen to start my journey into data science with LeWagon here in the UK. </p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/HughLupson">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/82259234?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Hugh Lupson</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/HughLupson/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I am a graduate student keen to harness data science for research. I also currently work in the data team at a legal technology firm.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/mnm7">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618059785/vpwqpxqtoyqcdgw5roys.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Mohanad Maarouf</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/mnm7/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">As an Engineer and Project Manager, I’m looking forward to develop skills in Data Science and apply them in a versatile manner to improve all aspects of my career. </p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/Gifta-eng">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/82258989?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Gift Opar</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/Gifta-eng/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I'm pivoting from Account Management in Ads to Tech Finance, having gained relevant coding skills from the bootcamp. I've been interested in coding for a while now, but only properly dove into a proper coding program this year with LeWagon, given the remote option during the pandemic.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/pandit-a">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618312960/gihonritijm8ssxwvubp.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Anand Pandit</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/pandit-a/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">Hi all!
+<br />I'm a neurosurgeon in training and post-doctoral neuroscientist. 
+<br />In my research, I mainly work with imaging and large clinical data-sets of patients with brain tumours. 
+<br />Excited to be in the batch</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/lukas-pham">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618047275/xwwj45itevqvpkuz4jd1.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Lukas Pham</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/lukas-pham/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">Hi guys! I am the CEO @Nulisec, we're building a B2B wholesale marketplace for manufacturers and retailers of consumer goods. 
+<br />I have always been interested in learning to code but I've never actually taken any lessons or courses. I am looking to learn new skills so that I can take my business further and add more value to the world. I am excited to meet new people and learn new skills! </p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/richrussell1991">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618064758/jvmbtessrnab4ndoeruq.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Richard Russell</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/richrussell1991/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I am learning to code for my job (I work for a bank), and also to give me more skills in case I decide to change careers. Learning to code will help me with my current job, rather than leading to a career change.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/dsenanayake95">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/71254484?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Dehaja Senanayake</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/dsenanayake95/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I'm currently a policy advisor in the Civil Service - I got interested in coding during lockdown 1.0 and so applied to the Le Wagon bootcamp to gain a better understanding of data/ analysis. I hope to move into a career in tech, in the agri-food space in the next year or so.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/realGhostFoxx">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://avatars.githubusercontent.com/u/46158176?v=4" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Alexandru Stefanescu</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/realGhostFoxx/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">I’m a digital marketer with a background in Customer Engagement and Insights Generation. Over the past 3.5 years I’ve helped launch and scale a disruptive B2B eCommerce start-up founded by the HEINEKEN Group and jointly owned with Coca Cola HBC. Previously, I’ve developed the B2C eCommerce landscape and eRetailer Engagement Roadmap for Philips SE Europe. I’m passionate about data science and insights that empower tailored digital customer journeys and I help teams build analytics automation products in Python and Tableau.</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3  ">
+        
+          <a href="/alumni/sullivan-a-james">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618146261/hnvlfhox3spu3oy0nru3.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>James Sullivan</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/sullivan-a-james/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">Hi! I am currently working in the modelling  team at Deloitte in London. My work sees my involvement in scripting financial models and designing tools to perform risk assessments on asset portfolios.  From prior professional experience, I have gained familiarity with SQL and Python; but I'm hoping to add to my technical 'tool box'  through the data science bootcamp with Le Wagon!</p>
+          </div>
+      </div>
+      <div class="col-12 d-flex p-3 classmates-background-gray ">
+        
+          <a href="/alumni/lukevano">
+            <img class="img-thumbnail" style="max-width: 90px" width="90" src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1618043863/y8acinhvxepm0fvjvmwy.jpg" />
+</a>          <div class="clasmates-student-links d-flex flex-column justify-content-between px-3">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>Luke Vano</strong>
+              </div>
+              <div>
+                  <a class="my-0 ml-3" href="/users/lukevano/dashboard?camp_slug=602">
+                    <small>
+                      <i class="fas fa-tv"></i> dashboard
+                    </small>
+</a>              </div>
+            </div>
+            <p class="student-bio-wrapper d-none d-md-block">London based psychiatrist who is carrying out research using brain imaging. Started using Matlab as a way to analyse the images and have previously used R studio for statistical analysis. Upskilling in Python would allow me to investigate interesting hypotheses.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+
+    <meta name="action-cable-url" content="/cable" />
+    <script src="https://d26jy9fbi4q9wx.cloudfront.net/assets/application-7efbb8553dcc0783f0b2079207671d265fe48922f7dc809ef4bdcb2d231eef4f.js"></script>
+    <script src="https://d26jy9fbi4q9wx.cloudfront.net/packs/application-524eddefdabae93e8904.js"></script>
+    
+  </body>
+</html>

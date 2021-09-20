@@ -1,0 +1,57 @@
+// Specific CSS for your home-page
+a {
+  text-decoration: none;
+}
+
+.wagon-container {
+  height: 100vh;
+}
+
+.main-content {
+  width: 100vw;
+}
+
+.red-content {
+  width: 100vw;
+  background-color: $red;
+  // max-width: 1700px;
+}
+
+.old_lace-content {
+  width: 100vw;
+  background-color: $red;
+  // max-width: 1700px;
+  // padding: 32px;
+}
+
+.big-box {
+  max-width: 1500px;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .wagon-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    height: 100%;
+    margin-top: 64px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  .red-content {
+    margin-top: 64px;
+  }
+}
+
+.free-content {
+  width: 100%;
+}

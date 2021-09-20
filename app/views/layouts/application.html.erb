@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pt602</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/cc0776e5fd.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  </head>
+
+  <body>
+    <div class="d-flex wagon-container">
+      <%= render 'pages/sidebar' %>
+
+      <% if params[:action] == 'the_batch' || params[:action] == 'final_note' %>
+        <div class="main-content p-3">
+      <% elsif params[:action] == 'the_students' || params[:action] == 'the_projects' || params[:action] == 'the_TAs' || params[:action] == 'the_staff' %>
+        <div class="red-content">
+      <% else %>
+        <div class="old_lace-content">
+      <% end %>
+        <%= yield %>
+      </div>
+
+    </div>
+  </body>
+</html>

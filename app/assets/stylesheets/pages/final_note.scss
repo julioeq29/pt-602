@@ -1,0 +1,27 @@
+.final-upper {
+  padding-top: 72px;
+  padding-left: 72px;
+  padding-right: 72px;
+
+  h4 {
+    text-align: end;
+  }
+}
+
+@media (max-width: 1200px) {
+  .final-upper {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .final-upper {
+    padding: 24px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

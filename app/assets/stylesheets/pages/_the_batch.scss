@@ -1,0 +1,56 @@
+.batch-container {
+  background-color: $red;
+  border-radius: 12px;
+  height: 100%;
+  color: white;
+  box-shadow: 0px 10px 16px rgba(0,0,0,0.3);
+}
+
+.batch-upper {
+  // height: 50%;
+}
+
+.batch-lower {
+  padding-bottom: 72px;
+  padding-right: 72px;
+}
+
+
+@media (max-width: 576px) {
+  .batch-lower {
+    padding-bottom: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+.lw-logo-lg {
+  border-radius: 50%;
+  border: 10px solid white;
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 1370px) {
+  .lw-logo-lg {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lw-logo-lg {
+    height: 130px;
+    width: 130px;
+    border: 5px solid white;
+  }
+}
+
+@media (max-width: 576px) {
+  .lw-logo-lg {
+    border: 5px solid white;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 2rem !important;
+  }
+}

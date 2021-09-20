@@ -1,0 +1,10 @@
+<div class="big-box">
+  <div class="projects-container m-3 p-3 bg-white">
+    <div class="cards-projects" data-controller="modal">
+      <% @projects.each do |project| %>
+        <%= render 'pages/project', project: project %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

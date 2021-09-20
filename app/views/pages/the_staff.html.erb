@@ -1,0 +1,13 @@
+<div class="big-box">
+  <div class="cards-students cards-staff m-3">
+    <% @staff.each do |s| %>
+      <div class="card-student">
+        <%= image_tag s.avatar_url, class: 'avatar-bordered avatar-teacher' %>
+          <% colour = ['pippin', 'old_lace', 'black_n_white', 'red'] %>
+          <div class="student-name staff-name <%= "#{colour.sample}" %>" >
+            <p class="m-0"><%= s.name.split[0].capitalize %></p>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
